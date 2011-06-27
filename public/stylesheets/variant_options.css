@@ -16,7 +16,7 @@
 .variant-option-values li {
   display: block;
   position: relative;
-  float: left;
+  float: none;
 }
 .variant-option-values li a {
   display: block;

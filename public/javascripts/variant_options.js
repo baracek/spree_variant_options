@@ -92,10 +92,10 @@ function VariantOptions(options) {
         disable($(element).addClass('unavailable locked').unbind('click'));
       } else if (keys.length == 1) {
         _var = variants[keys[0]];
-        $(element).addClass(_var.count ? selection.length == 1 ? 'in-stock auto-click' : 'in-stock' : 'out-of-stock');        
+        $(element).addClass( selection.length == 1 ? 'in-stock auto-click' : 'in-stock' );        
       } else {
         $.each(variants, function(key, value) { count += value.count });
-        $(element).addClass(count ? 'in-stock' : 'out-of-stock');        
+        $(element).addClass( 'in-stock' );        
       }
     });
   }
